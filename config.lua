@@ -4,7 +4,7 @@ lvim.leader = " "
 lvim.colorscheme = "tokyonight" -- set to a custom theme
 lvim.builtin.time_based_themes = true -- set false to use your own configured theme
 lvim.transparent_window = false -- enable/disable transparency
-lvim.debug = false
+lvim.debug = true
 vim.lsp.set_log_level "error"
 lvim.log.level = "warn"
 require("user.neovim").config()
@@ -19,7 +19,7 @@ lvim.builtin.tabnine = { active = true } -- change to false if you don't like ta
 lvim.builtin.persistence = { active = true } -- change to false if you don't want persistence
 lvim.builtin.presence = { active = false } -- change to true if you want discord presence
 lvim.builtin.orgmode = { active = false } -- change to true if you want orgmode.nvim
-lvim.builtin.dap.active = false -- change this to enable/disable debugging
+lvim.builtin.dap.active = true -- change this to enable/disable debugging
 lvim.builtin.fancy_statusline = { active = true } -- enable/disable fancy statusline
 lvim.builtin.fancy_wild_menu = { active = false } -- enable/disable cmp-cmdline
 lvim.builtin.fancy_diff = { active = false } -- enable/disable fancier git diff
@@ -62,10 +62,10 @@ lvim.builtin.breadcrumbs.active = false
 lvim.builtin.illuminate.active = false
 lvim.builtin.noice = { active = false } -- enables noice.nvim and inc-rename.nvim
 lvim.builtin.go_programming = { active = false } -- gopher.nvim + nvim-dap-go
-lvim.builtin.python_programming = { active = false } -- swenv.nvim + nvim-dap-python + requirements.txt.vim
-lvim.builtin.web_programming = { active = false } -- typescript.nvim + package-info.nvim
-lvim.builtin.rust_programming = { active = false } -- rust_tools.nvim + crates.nvim
-lvim.builtin.cpp_programming = { active = false } -- clangd_extensions.nvim + make-tools.nvim
+lvim.builtin.python_programming = { active = true } -- swenv.nvim + nvim-dap-python + requirements.txt.vim
+lvim.builtin.web_programming = { active = true } -- typescript.nvim + package-info.nvim
+lvim.builtin.rust_programming = { active = true } -- rust_tools.nvim + crates.nvim
+lvim.builtin.cpp_programming = { active = true } -- clangd_extensions.nvim + make-tools.nvim
 lvim.builtin.cmp.cmdline.enable = false
 lvim.builtin.borderless_cmp = false
 lvim.builtin.colored_args = false -- if true then sets up hlargs.nvim
