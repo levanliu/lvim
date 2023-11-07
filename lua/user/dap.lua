@@ -319,7 +319,7 @@ M.config = function()
   }
 
   local path = vim.fn.glob(mason_path .. "packages/codelldb/extension/")
-    or vim.fn.expand "~/" .. ".vscode/extensions/vadimcn.vscode-lldb-1.8.1/"
+    or vim.fn.expand "~/" .. ".vscode/extensions/vadimcn.vscode-lldb-1.10.0/"
   local lldb_cmd = path .. "adapter/codelldb"
 
   dap.adapters.codelldb = {
@@ -341,10 +341,11 @@ M.config = function()
       type = "codelldb",
       request = "launch",
       program = function()
-        return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+        return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
       end,
-      cwd = "${workspaceFolder}",
-      stopOnEntry = true,
+      cwd = '${workspaceFolder}',
+      stopOnEntry = false,
+      args = {},
       runInTerminal = true,
     },
   }

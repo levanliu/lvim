@@ -61,7 +61,7 @@ lvim.builtin.lir.active = false
 lvim.builtin.breadcrumbs.active = false
 lvim.builtin.illuminate.active = false
 lvim.builtin.noice = { active = false } -- enables noice.nvim and inc-rename.nvim
-lvim.builtin.go_programming = { active = false } -- gopher.nvim + nvim-dap-go
+lvim.builtin.go_programming = { active = true } -- gopher.nvim + nvim-dap-go
 lvim.builtin.python_programming = { active = true } -- swenv.nvim + nvim-dap-python + requirements.txt.vim
 lvim.builtin.web_programming = { active = true } -- typescript.nvim + package-info.nvim
 lvim.builtin.rust_programming = { active = true } -- rust_tools.nvim + crates.nvim
